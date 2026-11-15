@@ -1,10 +1,12 @@
 # The Codenote
-## Project Milestone 2 — Styled & Responsive
+## Project Milestone 3 — Accessible & Designed
+
+**Status:** In progress — Gestalt design documented; contact form and final accessibility verification pending.
 
 **Developer:** Jason Marsden  
 **Project:** The Codenote — Personal Portfolio Website  
 **Course:** Web Development  
-**Date:** November 1, 2026  
+**Last updated:** November 15, 2026  
 **Technologies:** HTML5, CSS3, Git, GitHub, GitHub Pages
 
 ---
@@ -19,15 +21,13 @@ The website features a Death Note-inspired design,
 combining custom typography, dark colors, animations,
 and responsive layouts.
 
-Project Milestone 2 focuses on improving the website's
-visual appearance, CSS styling, and responsiveness
-across desktop, tablet, and mobile devices.
+Milestone 2 established the visual styling and responsive layouts across desktop, tablet, and mobile devices. Homework 4 introduced accessibility improvements. Milestone 3 builds on both with intentional visual design, WCAG AA contrast verification, and an accessible contact form.
 
 ---
 
 ## Project Objectives
 
-The primary objectives of Project Milestone 2 were to:
+The original Milestone 2 objectives were to:
 
 - Implement an external CSS stylesheet.
 - Establish a consistent visual design.
@@ -68,7 +68,45 @@ development projects and technical accomplishments.
 
 ---
 
-## Development Log — November 1, 2026
+## Milestone 3 Development Log — November 15, 2026
+
+### Accessibility fixes carried forward from Homework 4
+
+- **Heading hierarchy:** Corrected heading levels to make page structure easier to follow with assistive technologies.
+- **Image alt text:** Updated the character description to identify Light Yagami from Death Note rather than relying on the ambiguous name Kira.
+- **Redundant navigation links:** Removed unnecessary links where the logo already served as Home and where a navigation link repeated the current page.
+
+A new WAVE check on all three pages will be required after completing the Milestone 3 changes.
+
+### Visual Design — Gestalt Principles
+
+**Proximity:** I grouped related elements, such as the logo, page heading, and navigation links, within a shared header. Spacing and borders also group the welcome content and separate it from the rest of the homepage.
+
+**Similarity:** I maintained consistent fonts, navigation styling, borders, and colors across the Home, About, and Projects pages. Repeating these styles makes the website feel unified and helps users recognize familiar elements.
+
+### Consistent Color Palette
+
+The site uses black (`#000000`) backgrounds, white (`#ffffff`) text, and gray (`#555555`) borders, with dark red (`#9b1c31`) navigation-hover and muted green (`#6f9b82`) footer-hover accents.
+
+**WCAG AA contrast status:** White text on black passes. The existing dark-red hover text on black does not meet the minimum 4.5:1 contrast ratio for normal text. The red can remain as a decorative accent, but a compliant text-hover treatment is needed before submission. All text/background combinations must be verified with the WebAIM Contrast Checker.
+
+### Accessible Contact Form — Pending
+
+The About page will receive a contact form with associated labels, appropriate fieldset and legend grouping, keyboard access, and error messages programmatically connected to invalid fields. A GitHub Pages site needs an external service or backend to deliver submitted messages.
+
+### Final Milestone 3 Checklist
+
+- [x] Document two Gestalt principles in the README.
+- [x] Document the existing color palette.
+- [ ] Add and test the accessible About-page contact form.
+- [ ] Verify and correct all WCAG AA text contrast states.
+- [ ] Run WAVE on all three updated pages and fix every error.
+- [ ] Record the completed fixes and final testing results here.
+- [ ] Commit the finished website and submit this repository URL.
+
+---
+
+## Milestone 2 Development Log — November 1, 2026
 
 ### 1. Responsive Header Improvements
 
@@ -351,4 +389,4 @@ for future development of The Codenote.
 ---
 
 **Developed by Jason Marsden**  
-**November 1, 2026**
+**Last updated November 15, 2026**
