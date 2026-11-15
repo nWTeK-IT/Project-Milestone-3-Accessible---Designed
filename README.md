@@ -1,7 +1,7 @@
 # The Codenote
 ## Project Milestone 3 — Accessible & Designed
 
-**Status:** In progress — Gestalt design documented; contact form and final accessibility verification pending.
+**Status:** Milestone 3 implementation and WAVE accessibility checks completed.
 
 **Developer:** Jason Marsden  
 **Project:** The Codenote — Personal Portfolio Website  
@@ -43,7 +43,7 @@ The original Milestone 2 objectives were to:
 
 ## Website Structure
 
-The website consists of three primary HTML pages:
+The website consists of four HTML pages:
 
 ### Home — index.html
 
@@ -66,6 +66,10 @@ education, and interests in Information Technology.
 The Projects page is dedicated to showcasing my
 development projects and technical accomplishments.
 
+### Contact Me — contact-me.html
+
+The Contact Me page includes an accessible HTML contact form with required name, email, and message fields.
+
 ---
 
 ## Milestone 3 Development Log — November 15, 2026
@@ -76,33 +80,33 @@ development projects and technical accomplishments.
 - **Image alt text:** Updated the character description to identify Light Yagami from Death Note rather than relying on the ambiguous name Kira.
 - **Redundant navigation links:** Removed unnecessary links where the logo already served as Home and where a navigation link repeated the current page.
 
-A new WAVE check on all three pages will be required after completing the Milestone 3 changes.
+All four updated pages were checked with WAVE, and the final checks were reported as passing.
 
 ### Visual Design — Gestalt Principles
 
 **Proximity:** I grouped related elements, such as the logo, page heading, and navigation links, within a shared header. Spacing and borders also group the welcome content and separate it from the rest of the homepage.
 
-**Similarity:** I maintained consistent fonts, navigation styling, borders, and colors across the Home, About, and Projects pages. Repeating these styles makes the website feel unified and helps users recognize familiar elements.
+**Similarity:** I maintained consistent fonts, navigation styling, borders, and colors across the Home, About, Projects, and Contact Me pages. Repeating these styles makes the website feel unified and helps users recognize familiar elements.
 
 ### Consistent Color Palette
 
-The site uses black (`#000000`) backgrounds, white (`#ffffff`) text, and gray (`#555555`) borders, with dark red (`#9b1c31`) navigation-hover and muted green (`#6f9b82`) footer-hover accents.
+The site uses black (`#000000`) backgrounds, white (`#ffffff`) text, and gray (`#555555`) borders, with dark red (`#9b1c31`) decorative underlines on navigation and footer hover states.
 
-**WCAG AA contrast status:** White text on black passes. The existing dark-red hover text on black does not meet the minimum 4.5:1 contrast ratio for normal text. The red can remain as a decorative accent, but a compliant text-hover treatment is needed before submission. All text/background combinations must be verified with the WebAIM Contrast Checker.
+**WCAG AA contrast improvement:** Replaced dark-red hover text with white hover text while retaining the red accent as an underline. White text on black meets the WCAG AA normal-text contrast threshold. Final WAVE checks were reported as passing on all four pages.
 
-### Accessible Contact Form — Pending
+### Accessible Contact Form — Completed
 
-The About page will receive a contact form with associated labels, appropriate fieldset and legend grouping, keyboard access, and error messages programmatically connected to invalid fields. A GitHub Pages site needs an external service or backend to deliver submitted messages.
+Added a dedicated `contact-me.html` page with explicitly associated labels for Name, Email, and Message, plus a `fieldset` and `legend` grouping the contact information. HTML5 `required` fields and `type="email"` provide native browser validation and accessible validation prompts. The required-field and invalid-email prompts were tested in Live Server. The form is a front-end demonstration and is not connected to a message-delivery service.
 
 ### Final Milestone 3 Checklist
 
 - [x] Document two Gestalt principles in the README.
 - [x] Document the existing color palette.
-- [ ] Add and test the accessible About-page contact form.
-- [ ] Verify and correct all WCAG AA text contrast states.
-- [ ] Run WAVE on all three updated pages and fix every error.
-- [ ] Record the completed fixes and final testing results here.
-- [ ] Commit the finished website and submit this repository URL.
+- [x] Add and test the accessible Contact Me page and form.
+- [x] Correct the identified hover-text contrast issue.
+- [x] Run WAVE on all four updated pages; final checks reported as passing.
+- [x] Record the completed fixes and final testing results here.
+- [ ] Submit this repository URL to the course assignment.
 
 ---
 
