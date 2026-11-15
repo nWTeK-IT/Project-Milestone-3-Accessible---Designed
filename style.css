@@ -111,8 +111,10 @@ nav{
 }
 
 /* Site Header Navigation Link Hover Effect */
-.site-header nav a:hover {
-    color:#9b1c31;
+.site-header nav a:hover{
+   color;ffffff;
+   text-decoration:underline;
+   text-decoration-color:#9b1c31;
 }
 
 /* Footer Styling */
@@ -131,7 +133,9 @@ footer a {
 
 /* Footer Link Hover Effect */
 footer a:hover {
-    color:#6f9b82;
+   color:ffffff;
+   text-decoration:underline;
+   text-decoration-color:#9b1c31;
 }
 
 /* Footer Paragraph Styling */
